@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app{
+            width: 100%;
+            max-width: 100%;
+        }
+        #app p{
+            width: 100%;
+            padding: 14px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            font-family:sans-serif;
+        }
+        #app textarea{
+            width: 100%;
+            border: 2px solid rgb(68, 16, 16);
+            outline: none;
+            border-radius: 14px;
+            min-height: 140px;
+        }
+        #app select{
+            width: 100%;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main id="app">
+<p>text-نص</p>
+<select id="select">
+    <option value="encode">تشفير النص</option>
+    <option value="decode">فك تشفير النص</option>
+</select> 
+    <textarea id="text"> </textarea>
+    <p>Result - نتيجة</p>
+    <textarea id="result"> </textarea>
+    </main>
+    <script src="sal.js"></script>
+</body>
+</html>
